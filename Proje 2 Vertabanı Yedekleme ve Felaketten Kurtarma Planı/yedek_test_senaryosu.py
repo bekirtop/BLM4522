@@ -4,7 +4,7 @@ import time
 import os
 from datetime import datetime
 
-KAYNAK = "../Sirket_Yonetim.db"
+KAYNAK = "../Titanic.db"
 YEDEK = "./yedekler"
 
 # yedek klasöru yoksa olusturuyrz
@@ -14,7 +14,7 @@ if not os.path.exists(YEDEK):
 def tam_yedek_al():
     # tam backup simulasyonu
     zaman = datetime.now().strftime("%Y%m%d_%H%M%S")
-    yedeklendi = f"{YEDEK}/Sirket_Yonetim_Full_{zaman}.db"
+    yedeklendi = f"{YEDEK}/Titanic_Full_{zaman}.db"
     
     try:
         shutil.copy2(KAYNAK, yedeklendi)
@@ -31,7 +31,7 @@ def test_yedek():
         return
 
     son = os.path.join(YEDEK, yedekler[0])
-    kurtarilan = "./Kurtarilan_Sirket_DB.db"
+    kurtarilan = "./Kurtarilan_TitanicDB.db"
 
     print(f"Felaket senaryosu testi başlatıldı. En son yedek kullanılıyor: {son}")
     
