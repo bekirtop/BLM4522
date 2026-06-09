@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(pdftotext \"/Users/bekirtop/Desktop/agtabanli/agtabanli/BLM4522-Proje Konuları.pdf\" -)"
-    ]
-  }
-}
