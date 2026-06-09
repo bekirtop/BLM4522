@@ -1,0 +1,5 @@
+=== ETL SONUÇ RAPORU ===
+İşleme alınan toplam kayıt sayısı: 891
+Eksik olan 177 adet yaş verisi, medyan değeriyle dolduruldu.
+Güncel temizlenmiş kayıt sayısı: 891
+Veriler başarıyla temiz bir veritabanına aktarıldı: ./Titanic_Cleaned.db
