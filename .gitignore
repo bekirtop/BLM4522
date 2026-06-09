@@ -1,0 +1,26 @@
+# Veritabanı dosyaları (binary, repoya eklenmemeli)
+*.db
+*.sqlite
+*.sqlite3
+*.mdf
+*.ldf
+
+# Veri dosyaları
+*.csv
+
+# Yedek klasörleri
+yedekler/
+
+# macOS
+.DS_Store
+
+# Office geçici/kilit dosyaları (Word açıkken oluşur)
+~$*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Claude Code
+.claude/
